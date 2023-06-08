@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Mondrian Project 2</title> 
+    <style>
+        body {
+           display: flex; 
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+           padding: 0;
+        }
+
+        .outerline {
+            background-color: #b5b6b2;
+            display: flex; 
+           justify-content: center;
+           align-items: center;
+            border: 20px solid #F0F1EC;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 150px 230px 59px;
+            grid-template-rows: 210px 130px 59px;
+            gap: 15px;
+            background-color:#232629 ;
+            border: #232629 15px solid;
+        }
+
+        .item {
+            background-color: #F0F1EC;
+        }
+
+        .yellow {
+            background-color:#F9D01E  ;
+        }
+
+        .red {
+            background-color: #E72F24;
+            grid-column: span 2 ;
+            grid-row: span 2;
+        }
+
+        .blue {
+            background-color: #004592;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="outerline">
+        <div class="container">
+            <div class="item yellow"></div>
+            <div class="item red"></div>
+            <div class="item white1"></div>
+            <div class="item blue"></div>
+            <div class="item"></div>
+            <div class="item white2"></div> 
+        </div>
+
+    </div>
+</body>
+</html>
